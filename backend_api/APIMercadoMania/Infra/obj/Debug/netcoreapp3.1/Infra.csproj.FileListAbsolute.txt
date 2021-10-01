@@ -1,0 +1,12 @@
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\bin\Debug\netcoreapp3.1\Infra.deps.json
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\bin\Debug\netcoreapp3.1\Infra.runtimeconfig.json
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\bin\Debug\netcoreapp3.1\Infra.runtimeconfig.dev.json
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\bin\Debug\netcoreapp3.1\Infra.dll
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\bin\Debug\netcoreapp3.1\Infra.pdb
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\obj\Debug\netcoreapp3.1\Infra.csprojAssemblyReference.cache
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfoInputs.cache
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfo.cs
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\obj\Debug\netcoreapp3.1\Infra.csproj.CoreCompileInputs.cache
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\obj\Debug\netcoreapp3.1\Infra.dll
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\obj\Debug\netcoreapp3.1\Infra.pdb
+C:\Users\Vinícius\Documents\Programação\Projetos\MercadoMania\BackEnd_API\APIMercadoMania\Infra\obj\Debug\netcoreapp3.1\Infra.genruntimeconfig.cache
