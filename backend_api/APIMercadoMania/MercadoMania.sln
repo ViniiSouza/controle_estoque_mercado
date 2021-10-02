@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIMercadoMania", "APIMercadoMania\APIMercadoMania.csproj", "{513706BF-634A-4501-9EC3-713FE8E8CDD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{B19DBB25-5B27-429A-BFE7-EB9FC320EFCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "Infra\Infra.csproj", "{B19DBB25-5B27-429A-BFE7-EB9FC320EFCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicacao", "Aplicacao\Aplicacao.csproj", "{8B9225B2-B909-446D-A96F-B7917F798527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B19DBB25-5B27-429A-BFE7-EB9FC320EFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B19DBB25-5B27-429A-BFE7-EB9FC320EFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B19DBB25-5B27-429A-BFE7-EB9FC320EFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9225B2-B909-446D-A96F-B7917F798527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9225B2-B909-446D-A96F-B7917F798527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9225B2-B909-446D-A96F-B7917F798527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9225B2-B909-446D-A96F-B7917F798527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

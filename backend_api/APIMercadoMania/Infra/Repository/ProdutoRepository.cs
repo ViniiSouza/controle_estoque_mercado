@@ -5,10 +5,10 @@ using System.Text;
 
 namespace Infra.Repository
 {
-    public class ProdutosRepository : BaseRepository<Produtos>
+    public class ProdutoRepository : BaseRepository<Produtos>
     {
         public readonly MercadoManiaDbContext _context;
-        public ProdutosRepository()
+        public ProdutoRepository()
         {
             _context = new MercadoManiaDbContext();
         }
