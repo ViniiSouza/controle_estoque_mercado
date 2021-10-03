@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
 <nav class="navbar navbar-expand-xl navbar-dark bg-purple">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Sistema MercadoMania</a>
@@ -9,33 +7,34 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door"></i> Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><i class="bi bi-box-seam"></i> Novo produto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><i class="bi bi-columns"></i> Nova categoria</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><i class="bi bi-cart-dash"></i> Estoque</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><i class="bi bi-clipboard-data"></i> Gerenciar itens</a>
-        </li>
+        <!--Produtos-->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bi bi-box-seam"></i> Produtos
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Adicionar produto</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="bi bi-clipboard-data"></i> Gerenciar produtos</a>
+          </div>
         </li>
-        
+        <!--Categorias-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="bi bi-columns"></i> Categorias
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Adicionar categoria</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="bi bi-clipboard-data"></i> Gerenciar categorias</a>
+          </div>
+        </li>
+        <!--Estoque-->
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><i class="bi bi-cart-dash"></i> Gerenciar estoque</a>
+        </li>
       </ul>
     </div>
   </div>
