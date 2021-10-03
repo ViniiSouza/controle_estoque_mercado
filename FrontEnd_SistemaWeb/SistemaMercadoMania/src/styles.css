@@ -2,3 +2,15 @@
 .bg-purple{
     background-color: #6e1a99;
 }
+
+.mid-align{
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+
+.spacement{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

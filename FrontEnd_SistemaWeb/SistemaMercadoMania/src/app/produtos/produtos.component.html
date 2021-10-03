@@ -1,0 +1,5 @@
+<div class="container-fluid">
+    <h1 class="mid-align">Lista de produtos cadastrados:</h1>
+    <button class="btn btn-primary mid-align spacement" style="cursor:pointer;" (click)=atualizarListagem()><i class="bi bi-arrow-counterclockwise"></i>Atualizar</button>
+    <li class="mid-align list-group-item list-group-item-primary item-produto" *ngFor="let item of listaProdutos">{{item.id}} - {{item.nome}} - Categoria: {{item.categoriaId}}</li>
+</div>
