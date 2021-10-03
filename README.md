@@ -26,8 +26,9 @@
 - 1 C Sharp (BackEnd)
 - 2 SqlServer (Banco de Dados)
 - 3 Git (versionamento)
-- 4 -
-- 5 -
+- 4 Angular
+- 5 TypeScript
+- 6 Bootstrap
 
 ## <h3 id="licenca">Licença</h3>
 The MIT License (MIT)
