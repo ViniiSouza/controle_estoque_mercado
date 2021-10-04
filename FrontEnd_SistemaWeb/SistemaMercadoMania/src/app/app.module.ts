@@ -9,19 +9,25 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { EstoqueComponent } from './estoque/estoque.component';
 import { CategoriasServices } from './categorias/categorias.services';
 import { ProdutosServices } from './produtos/produtos.services';
+import { CategoriasAddComponent } from './categorias/categorias.add.component';
+import { FormsModule } from '@angular/forms';
+import { ProdutosAddComponent } from './produtos/produtos.add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProdutosComponent,
+    ProdutosAddComponent,
     CategoriasComponent,
+    CategoriasAddComponent,
     EstoqueComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [
     CategoriasServices,

@@ -25,6 +25,7 @@ export class CategoriasServices {
         this._http.post<Categorias>(this.localhost,categoria).subscribe( result => {
             alert("Sucesso!");
         }, error => console.error(error));
+        
     }
 
     UpdateCategorias(categoria:Categorias):void{

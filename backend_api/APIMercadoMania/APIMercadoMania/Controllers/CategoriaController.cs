@@ -26,44 +26,68 @@ namespace APIMercadoMania.Controllers
         }
 
         [HttpPost]
-        public string Post([FromBody]Categorias categoria)
+        public BaseResult Post([FromBody]Categorias categoria)
         {
             try
             {
                 _categoriaService.Post(categoria);
-                return "Post executado";
+                return new BaseResult()
+                {
+                    Sucesso = true,
+                    Mensagem = "Post executado"
+                };
             }
             catch (Exception ex)
             {
-                return "Erro encontrado: " + ex.Message;
+                return new BaseResult()
+                {
+                    Sucesso = false,
+                    Erro = "Erro encontrado: " + ex.Message
+                };
             }
             
         }
         [HttpPut]
-        public string Put(Categorias categoria)
+        public BaseResult Put(Categorias categoria)
         {
             try
             {
                 _categoriaService.Put(categoria);
-                return "Put executado";
+                return new BaseResult()
+                {
+                    Sucesso = true,
+                    Mensagem = "Put executado"
+                };
             }
             catch (Exception ex)
             {
-                return "Erro encontrado: " + ex.Message;
+                return new BaseResult()
+                {
+                    Sucesso = false,
+                    Erro = "Erro encontrado: " + ex.Message
+                };
             }
             
         }
         [HttpDelete("{id}")]
-        public string Delete(int id)
+        public BaseResult Delete(int id)
         {
             try
             {
                 _categoriaService.Delete(_categoriaService.GetById(id));
-                return "Delete executado";
+                return new BaseResult()
+                {
+                    Sucesso = true,
+                    Mensagem = "Delete executado"
+                };
             }
             catch (Exception ex)
             {
-                return "Erro encontrado: " + ex.Message;
+                return new BaseResult()
+                {
+                    Sucesso = false,
+                    Erro = "Erro encontrado: " + ex.Message
+                };
             }
             
         }
