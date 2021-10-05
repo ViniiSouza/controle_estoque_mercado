@@ -24,4 +24,8 @@ export class ProdutosComponent implements OnInit {
     this.listaProdutos = this._service.GetProdutos();
   }
 
+  deletarProduto(id:number){
+    this._service.DeleteProdutos(id);
+  }
+
 }

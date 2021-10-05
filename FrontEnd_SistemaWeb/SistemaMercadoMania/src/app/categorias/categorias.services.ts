@@ -8,7 +8,7 @@ export class CategoriasServices {
     _http :HttpClient;
     categoria:Categorias = new Categorias();
     listaCategorias:Categorias[] = [];
-    localhost:string = 'https://localhost:44340/categoria';
+    localhost:string = 'https://localhost:44340/categoria/';
 
     constructor(http : HttpClient){
         this._http = http;

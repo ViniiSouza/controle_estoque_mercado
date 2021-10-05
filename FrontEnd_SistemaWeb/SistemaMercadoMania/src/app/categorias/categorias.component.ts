@@ -24,4 +24,7 @@ export class CategoriasComponent implements OnInit {
     this.listaCategorias = this._service.GetCategorias();
   }
 
+  deletarCategoria(id:number){
+    this._service.DeleteCategorias(id);
+  }
 }

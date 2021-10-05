@@ -7,7 +7,7 @@ export class ProdutosServices {
     _http:HttpClient;
     listaProdutos:Produtos[] = []
     produto:Produtos = new Produtos();
-    localhost:string= 'https://localhost:44340/produto';
+    localhost:string= 'https://localhost:44340/produto/';
 
     constructor(http:HttpClient){
         this._http = http;
