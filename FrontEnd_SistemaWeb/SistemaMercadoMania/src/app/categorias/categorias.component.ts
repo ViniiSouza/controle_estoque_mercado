@@ -16,13 +16,14 @@ export class CategoriasComponent implements OnInit {
 
   constructor(services:CategoriasServices, private router:Router) {
       this._service = services;
-      setTimeout(() => {
-        this.atualizarListagem()
-      },500);
+      
    }
 
   ngOnInit(): void {
     this.listaCategorias = this._service.GetCategorias();
+    setTimeout(() => {
+      this.atualizarListagem()
+    },500);
   }
 
   atualizarListagem():void{

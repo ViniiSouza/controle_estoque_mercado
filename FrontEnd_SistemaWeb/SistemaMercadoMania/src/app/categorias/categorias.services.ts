@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Router } from "@angular/router";
 import { Categorias } from "../Models/categoria.model";
 
 @Injectable()
@@ -10,7 +11,7 @@ export class CategoriasServices {
     listaCategorias:Categorias[] = [];
     localhost:string = 'https://localhost:44340/categoria/';
 
-    constructor(http : HttpClient){
+    constructor(http : HttpClient, private router:Router){
         this._http = http;
     }
 
@@ -31,6 +32,7 @@ export class CategoriasServices {
     UpdateCategorias(categoria:Categorias):void{
         this._http.put<Categorias>(this.localhost, categoria).subscribe( result => {
             alert("Sucesso");
+            this.router.navigate(['/categorias/']);
         }, error => console.error(error));
     }
 

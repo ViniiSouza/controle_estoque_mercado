@@ -32,7 +32,6 @@ export class CategoriasFormComponent implements OnInit {
 
     alterarCategoria(){
         this._service.UpdateCategorias(this.categoria);
-        this.router.navigate(['/categorias/']);
     }
 
 }
