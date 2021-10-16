@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Categorias } from '../Models/categoria.model';
 import { CategoriasServices } from './categorias.services';
 
@@ -11,9 +12,13 @@ export class CategoriasComponent implements OnInit {
 
   _service:CategoriasServices;
   listaCategorias:Categorias[] = [];
+  
 
-  constructor(services:CategoriasServices) {
+  constructor(services:CategoriasServices, private router:Router) {
       this._service = services;
+      setTimeout(() => {
+        this.atualizarListagem()
+      },500);
    }
 
   ngOnInit(): void {
@@ -26,5 +31,9 @@ export class CategoriasComponent implements OnInit {
 
   deletarCategoria(id:number){
     this._service.DeleteCategorias(id);
+  }
+
+  redirecionarFormComId(item:any){
+    this.router.navigate(['/categorias/form/', item.id]);
   }
 }

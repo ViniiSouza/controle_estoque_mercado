@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Router } from "@angular/router";
 import { Produtos } from "../Models/produtos.models";
 
 @Injectable()
@@ -9,7 +10,7 @@ export class ProdutosServices {
     produto:Produtos = new Produtos();
     localhost:string= 'https://localhost:44340/produto/';
 
-    constructor(http:HttpClient){
+    constructor(http:HttpClient, private router:Router){
         this._http = http;
     }
 
@@ -29,6 +30,7 @@ export class ProdutosServices {
     UpdateProdutos(produto:Produtos):void{
         this._http.put<Produtos>(this.localhost, produto).subscribe(result =>{
             alert("Sucesso!");
+            this.router.navigate(['/produtos'])
         }, error => console.error(error));
     }
 
@@ -37,4 +39,11 @@ export class ProdutosServices {
             alert("Sucesso!");
         },error => console.error(error));
     }
+
+    getById(id:any){
+        this._http.get<Produtos>(this.localhost + id).subscribe(result =>{
+          this.produto = result;
+        }, error => console.error(error));
+        return this.produto;
+      }
 }

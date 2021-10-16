@@ -39,4 +39,11 @@ export class CategoriasServices {
             alert("Sucesso!");
         },error => console.error(error));
     }
+
+    getById(id:any){
+        this._http.get<Categorias>(this.localhost + id).subscribe(result =>{
+          this.categoria = result;
+        }, error => console.error(error));
+        return this.categoria;
+      }
 }

@@ -48,7 +48,7 @@ namespace APIMercadoMania.Controllers
             
         }
         [HttpPut]
-        public BaseResult Put(Categorias categoria)
+        public BaseResult Put([FromBody]Categorias categoria)
         {
             try
             {

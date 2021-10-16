@@ -3,7 +3,7 @@
     <button class="btn btn-primary mid-align spacement" style="cursor:pointer;" (click)=atualizarListagem()><i class="bi bi-arrow-counterclockwise"></i>Atualizar</button>
     <li class="mid-align list-group-item list-group-item-primary item-produto" *ngFor="let item of listaProdutos">
         {{item.id}} - {{item.nome}} - Categoria: {{item.categoriaId}}
-        <i style="position:absolute; left: 85%;" class="bi bi-pencil-square"></i>
+        <i style="position:absolute; left: 85%;" (click)="redirecionarFormComId(item)" class="bi bi-pencil-square"></i>
         <i style="cursor:pointer; position: absolute; left:90%;" (click)="deletarProduto(item.id)" class="bi bi-trash"></i>
     </li>
 </div>

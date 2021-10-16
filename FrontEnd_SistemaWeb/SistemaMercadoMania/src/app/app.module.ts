@@ -12,14 +12,18 @@ import { ProdutosServices } from './produtos/produtos.services';
 import { CategoriasAddComponent } from './categorias/categorias.add.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutosAddComponent } from './produtos/produtos.add.component';
+import { CategoriasFormComponent } from './categorias/categorias.form.component';
+import { ProdutosFormComponent } from './produtos/produtos.form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProdutosComponent,
     ProdutosAddComponent,
+    ProdutosFormComponent,
     CategoriasComponent,
     CategoriasAddComponent,
+    CategoriasFormComponent,
     EstoqueComponent
   ],
   imports: [
