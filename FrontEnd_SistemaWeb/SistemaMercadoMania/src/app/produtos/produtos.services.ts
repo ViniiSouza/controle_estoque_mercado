@@ -27,10 +27,10 @@ export class ProdutosServices {
         },error =>console.error(error));
     }
 
-    UpdateProdutos(produto:Produtos):void{
+    UpdateProdutos(produto:Produtos,rota:string):void{
         this._http.put<Produtos>(this.localhost, produto).subscribe(result =>{
             alert("Sucesso!");
-            this.router.navigate(['/produtos'])
+            this.router.navigate([rota])
         }, error => console.error(error));
     }
 

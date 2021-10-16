@@ -18,7 +18,8 @@ export class ProdutosFormComponent implements OnInit {
     listaCategorias:Categorias[] = [];
     
     constructor(service:ProdutosServices, private activateRoute:ActivatedRoute, private router:Router, private categoriaService:CategoriasServices){
-        this._service = service;   
+        this._service = service;
+        this.inserirInfoAlterar();
     }
     ngOnInit(){
         this.id = this.activateRoute.snapshot.paramMap.get('id') ? this.activateRoute.snapshot.paramMap.get('id') : -1;
@@ -29,8 +30,9 @@ export class ProdutosFormComponent implements OnInit {
         this.produto.categoriaId =0;
         setTimeout(() => {
             this.carregarCategorias()
+            this.inserirInfoAlterar();
           },500);
-        this.inserirInfoAlterar();
+        
     }
     carregarCategorias(){
         this.listaCategorias = this.categoriaService.GetCategorias();
@@ -38,10 +40,13 @@ export class ProdutosFormComponent implements OnInit {
 
     inserirInfoAlterar() :void {
         this.produto.id = this.id ? this.id : 0;
+        this.produto.nome = this._service.getById(this.id).nome;
+        this.produto.descricao = this._service.getById(this.id).descricao;
+        this.produto.quantidade = this._service.getById(this.id).quantidade;
       }
 
     alterarProduto(produto:Produtos){
-        this._service.UpdateProdutos(produto);
+        this._service.UpdateProdutos(produto, 'produtos');
     }
 
     textoCategoria(id:any, nome:any){

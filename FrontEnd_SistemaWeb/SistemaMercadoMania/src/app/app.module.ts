@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { ProdutosAddComponent } from './produtos/produtos.add.component';
 import { CategoriasFormComponent } from './categorias/categorias.form.component';
 import { ProdutosFormComponent } from './produtos/produtos.form.component';
+import { EstoqueFormComponent } from './estoque/estoque.form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProdutosFormComponent } from './produtos/produtos.form.component';
     CategoriasComponent,
     CategoriasAddComponent,
     CategoriasFormComponent,
-    EstoqueComponent
+    EstoqueComponent,
+    EstoqueFormComponent
   ],
   imports: [
     BrowserModule,
