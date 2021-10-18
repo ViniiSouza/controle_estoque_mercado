@@ -15,8 +15,8 @@
 ## <h3 id="objetivo">Objetivos atingidos</h3>
 - [X] Tabelas de categoria e produtos vinculadas
 - [X] API funcional com métodos Get, Post, Put e Delete;
-- [ ] Site vinculado à API que executa os métodos, com validações;
-- [ ] Controle de estoque (adição e remoção do estoque dos produtos);
+- [X] Site vinculado à API que executa os métodos, com validações;
+- [X] Controle de estoque (adição e remoção do estoque dos produtos);
 
 <h3 id="status">Status do projeto</h3>
 <p>Em execução</p>
