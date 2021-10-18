@@ -2,9 +2,9 @@
 <input class="mid-align" type="number" disabled placeholder="Id" id="produto-id" [(ngModel)]="produto.id">
 <input class="mid-align" disabled placeholder="Nome" id="produto-nome" [(ngModel)]="produto.nome">
 <div class="spacement mid-align" style="display: block; cursor: pointer;">
-    <i (click)="produto.quantidade = produto.quantidade - contabilizarEstoque()" style="font-size: 2rem; vertical-align: middle;" class="bi bi-node-minus"></i>
+    <i (click)="produto.quantidade = produto.quantidade - contabilizarEstoque()" class="bi bi-dash-circle icon-size"></i>
     <input  min="0" type="number" placeholder="Quantidade" value ="0" id="produto-quantidade" style="text-align: center;">
-    <i (click)="produto.quantidade = produto.quantidade + contabilizarEstoque()" style="font-size: 2rem; vertical-align: middle; cursor: pointer;" class="bi bi-node-plus"></i>
+    <i (click)="produto.quantidade = produto.quantidade + contabilizarEstoque()" class="bi bi-plus-circle icon-size"></i>
 </div>
 
 <div class="spacement">
@@ -12,5 +12,4 @@
     <input disabled class="mid-align" min="0" type="number" placeholder="Nome" id="produto-quantidade-final" [(ngModel)]="produto.quantidade">
 </div>
 
-
-<button id="adicionar-produto" (click)="atualizarEstoque(produto)"class="btn btn-primary mid-align spacement">Atualizar quantidade</button>
+<button id="adicionar-produto" (click)="atualizarEstoque(produto)"class="btn btn-purple mid-align spacement">Atualizar quantidade</button>

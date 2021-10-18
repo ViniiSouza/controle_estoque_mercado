@@ -5,11 +5,11 @@
 <div class="mid-align spacement row">
     <div class="col">
       <div ngbDropdown class="d-inline-block">
-        <button [(ngModel)]="produto.categoriaId" (click)="carregarCategorias();" class="btn btn-outline-primary" id="alterar-categoria" ngbDropdownToggle>Selecione a categoria</button>
+        <button [(ngModel)]="produto.categoriaId" (click)="carregarCategorias();" class="btn btn-outline-purple" id="alterar-categoria" ngbDropdownToggle>Selecione a categoria</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button (click)="textoCategoria(categoria.id, categoria.nome)" (click)="produto.categoriaId = categoria.id" ngbDropdownItem *ngFor="let categoria of listaCategorias">{{categoria.id}} - {{categoria.nome}}</button>
         </div>
       </div>
     </div>
 
-<button id="adicionar-produto" class="btn btn-primary mid-align spacement" (click)="alterarProduto(produto)">Adicionar</button>
+<button id="adicionar-produto" class="btn btn-purple mid-align spacement" (click)="alterarProduto(produto)">Adicionar</button>

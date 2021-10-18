@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h1 class="mid-align">Gerenciamento de estoque de produtos</h1>
-    <button class="btn btn-primary mid-align spacement" style="cursor:pointer;" (click)=atualizarListagem()><i class="bi bi-arrow-counterclockwise"></i>Atualizar</button>
-    <li class="mid-align list-group-item list-group-item-primary item-produto" *ngFor="let item of listaProdutos">
+    <button class="btn btn-purple mid-align spacement" style="cursor:pointer;" (click)=atualizarListagem()><i class="bi bi-arrow-counterclockwise"></i>Atualizar</button>
+    <li class="mid-align list-group-item list-group-item-secondary item-produto" *ngFor="let item of listaProdutos">
         Produto: {{item.nome}} - Categoria: {{item.categoriaId}} - Estoque atual: {{item.quantidade}}
         <i (click)="redirecionarFormComId(item)" style="position:absolute; left: 85%;" class="bi bi-cart-plus"></i>
     </li>

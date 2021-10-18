@@ -3,6 +3,22 @@
     background-color: #6e1a99;
 }
 
+.btn-purple{
+    background-color: rgb(131, 48, 173);
+    color: white;
+}
+
+.btn-outline-purple{
+    border: 1px solid rgb(131, 48, 173);
+    background-color: white;
+    color: rgb(131, 48, 173);
+}
+
+.btn-outline-purple:hover{
+    background-color: rgb(131, 48, 173);
+    color: white;
+}
+
 .mid-align{
     margin: 0 auto;
     justify-content: center;
@@ -18,3 +34,4 @@
 .item-produto{
     width: 35%;
 }
+

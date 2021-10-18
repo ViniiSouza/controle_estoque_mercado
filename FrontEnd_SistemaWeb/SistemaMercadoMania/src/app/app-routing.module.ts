@@ -5,11 +5,13 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { CategoriasFormComponent } from './categorias/categorias.form.component';
 import { EstoqueComponent } from './estoque/estoque.component';
 import { EstoqueFormComponent } from './estoque/estoque.form.component';
+import { HomeComponent } from './home/home.component';
 import { ProdutosAddComponent } from './produtos/produtos.add.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ProdutosFormComponent } from './produtos/produtos.form.component';
 
 const routes: Routes = [
+  {path: 'home', component: HomeComponent, pathMatch: 'full'},
   {path: 'categorias', component: CategoriasComponent},
   {path: 'categorias/add', component: CategoriasAddComponent},
   {path: 'categorias/form/:id', component: CategoriasFormComponent},
