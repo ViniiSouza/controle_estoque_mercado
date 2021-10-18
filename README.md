@@ -1,4 +1,4 @@
-## <h1 align="center">Controle de estoque de mercado</h1>
+## <h1 align="center">Controle de estoque de mercado (concluído)</h1>
 
 <p align="center">
   <a href="#descricao">Descrição do projeto</a> •
@@ -10,7 +10,7 @@
 </p>
 
 <h3 id="descricao">Descrição do projeto</h3>
-<p>Sistema de gerenciamento de estoque com produtos e categorias de um mercado</p>
+<p>Sistema de gerenciamento de estoque com produtos e categorias de um mercado fictício. É possível cadastrar, alterar e deletar produtos e categorias. Cada produto tem sua categoria vinculada a ele. Junto a isso, há um sistema de estoque onde é possível gerenciar a quantidade de itens dos produtos cadastrados.</p>
 
 ## <h3 id="objetivo">Objetivos atingidos</h3>
 - [X] Tabelas de categoria e produtos vinculadas
@@ -19,11 +19,12 @@
 - [X] Controle de estoque (adição e remoção do estoque dos produtos);
 
 <h3 id="status">Status do projeto</h3>
-<p>Em execução</p>
+<p>Versão funcional concluída. Novas melhorias podem ser adicionadas futuramente.</p>
 <p>Iniciado em 30/09/2021</p>
+<p>Finalizado em 17/10/2021</p>
 
 ## <h3 id="tecnologias">Tecnologias utilizadas</h3>
-- 1 C Sharp (BackEnd)
+- 1 C Sharp/.NET Core (BackEnd)
 - 2 SqlServer (Banco de Dados)
 - 3 Git (versionamento)
 - 4 Angular (FrontEnd)
